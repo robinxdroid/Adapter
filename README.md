@@ -1,7 +1,7 @@
 
 ## Adapter ##
 
-** 没啥好介绍的，一个Adapter库，很早就写了，一直自用，主要实现一个Adapter适应所有列表View,不用再继承Adapter,只需要写对应的Holder即可，所有的逻辑部分都在Holder中 ** 
+一个Adapter库，很早就写了，一直自用，主要实现一个Adapter适应所有列表View,不用再继承Adapter,只需要写对应的Holder即可，所有的逻辑部分都在Holder中 
 
 ### Support ###
     
@@ -85,6 +85,7 @@ public class ABSHolder extends ViewHolderBase<String> {
 
 **RecyclerView**
 
+
 1.创建一个Holder:
 
 ```java
@@ -154,6 +155,7 @@ public class RCVHolder extends RecyclerViewHolderBase<TestBean> {
 
 ```
 4.添加Header 与 Footer(装饰者模式):
+
 ```java
         HeaderAndFooterAdapter headerAndFooterAdapterWrapper = new HeaderAndFooterAdapter<>(adapter);
         View headerView1 = View.inflate(this,R.layout.item_header,null);
@@ -212,6 +214,7 @@ public class ViewPagerHolder extends ViewPagerHolderBase<String> {
  
 
 **动画（装饰者模式）**：
+
 1.ListView:
 ```java
         AnimationAdapter animationAdapter = new ScaleInAnimationAdapter(adapter);
