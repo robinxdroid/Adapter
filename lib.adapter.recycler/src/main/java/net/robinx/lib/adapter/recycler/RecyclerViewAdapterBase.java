@@ -125,7 +125,7 @@ public abstract class RecyclerViewAdapterBase<ItemDataType>
 
 	/*
 	 * =======================================================
-	 * 事件传递机制，用于传递ViewHolder事件到Activity中
+	 * Event delivery mechanism
 	 * =======================================================
 	 */
 

@@ -142,7 +142,7 @@ public abstract class ListDataAdapterBase<ItemDataType> extends BaseAdapter {
     }
     
     /*=======================================================
-     * 事件传递机制，用于传递"ViewHolder"事件到"Activity"中
+     * Event delivery mechanism
      *=======================================================
      */
 
