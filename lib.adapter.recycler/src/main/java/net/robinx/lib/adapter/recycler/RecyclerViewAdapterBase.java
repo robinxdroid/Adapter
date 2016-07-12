@@ -111,6 +111,10 @@ public abstract class RecyclerViewAdapterBase<ItemDataType>
 	 * Getter And Setter
 	 * =====================================================================
 	 */
+
+	public void setViewHolderClass(Class<?> cls, int itemViewResId, Object... args) {
+		setViewHolderClass(null,cls,itemViewResId,args);
+	}
 	
 	public void setViewHolderClass(Object enclosingInstance, Class<?> cls, int itemViewResId, Object... args) {
 		this.mEnclosingInstance = enclosingInstance;
