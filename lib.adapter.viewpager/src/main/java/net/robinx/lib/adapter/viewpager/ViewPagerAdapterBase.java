@@ -102,7 +102,11 @@ public abstract class ViewPagerAdapterBase<ItemDataType> extends PagerAdapter {
 	 * ===============================================================
 	 */
 
-	public void setViewHolderClass(final Object enclosingInstance, final Class<?> cls, final Object... args) {
+	public void setViewHolderClass(Class<?> cls, Object... args) {
+		setViewHolderClass(null,cls,args);
+	}
+
+	public void setViewHolderClass(Object enclosingInstance, Class<?> cls, Object... args) {
 		mViewPagerHolderCreator = DefaultViewPagerHolderCreatorImpl.create(enclosingInstance, cls, args);
 	}
 
