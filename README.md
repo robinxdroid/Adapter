@@ -52,7 +52,7 @@ public class ABSHolder extends ViewHolderBase<String> {
 }
 ```   
 2.代码中使用: 
-```
+```java
         ListDataAdapter<String> adapter = new ListDataAdapter<String>();
 		adapter.setViewHolderClass(ABSHolder.class);
 		listView.setAdapter(adapter);
@@ -63,7 +63,7 @@ public class ABSHolder extends ViewHolderBase<String> {
 		}
 ```      
 3.多Type:
-```
+```java
         final ListDataAdapter<String> adapter = new ListDataAdapter<String>();
 	
 		AbsViewTypeManager<String> viewTypeManager = new AbsViewTypeManager<String>();
@@ -87,7 +87,7 @@ public class ABSHolder extends ViewHolderBase<String> {
 
 1.创建一个Holder:
 
-```
+```java
 public class RCVHolder extends RecyclerViewHolderBase<TestBean> {
 	private TextView textView;
 
@@ -118,7 +118,7 @@ public class RCVHolder extends RecyclerViewHolderBase<TestBean> {
 }
 ```   
 2.代码中使用: 
-```
+```java
         RecyclerView recyclerView=(RecyclerView) findViewById(R.id.rcv);
         LinearLayoutManager layoutManager = new LinearLayoutManager(this);
         layoutManager.setOrientation(OrientationHelper.VERTICAL);
@@ -136,7 +136,7 @@ public class RCVHolder extends RecyclerViewHolderBase<TestBean> {
 ```    
 
 3.多Type:
-```
+```java
         RecyclerListDataAdapter<TestBean> adapter = new RecyclerListDataAdapter<TestBean>();
         RecyclerViewTypeManager<TestBean> viewTypeManager = new RecyclerViewTypeManager<TestBean>();
         viewTypeManager.viewTypes(TestBean.VIEW_TYPE_1, TestBean.VIEW_TYPE_2)  //多Type
@@ -154,17 +154,19 @@ public class RCVHolder extends RecyclerViewHolderBase<TestBean> {
 
 ```
 4.添加Header 与 Footer(装饰者模式):
+```java
         HeaderAndFooterAdapter headerAndFooterAdapterWrapper = new HeaderAndFooterAdapter<>(adapter);
         View headerView1 = View.inflate(this,R.layout.item_header,null);
         View footerView1 = View.inflate(this,R.layout.item_footer,null);
         headerAndFooterAdapterWrapper.addHeaderView(this, RCVHeaderHolder.class,headerView1,this);
         headerAndFooterAdapterWrapper.addFootView(this, RCVFooterHolder.class,footerView1)
         recyclerView.setAdapter(headerAndFooterAdapterWrapper);
+```
 
 **ViewPager**：
  1.创建一个Holder:
 
-```
+```java
 public class ViewPagerHolder extends ViewPagerHolderBase<String> {
 	
 	private Context context;
@@ -187,7 +189,7 @@ public class ViewPagerHolder extends ViewPagerHolderBase<String> {
 }
 ```   
 2.代码中使用: 
-```
+```java
         ViewPager viewPager=(ViewPager) findViewById(R.id.vp);
 		ViewPagerAdapter<String> adapter = new ViewPagerAdapter<String>();
 		adapter.setViewHolderClass(ViewPagerHolder.class);
@@ -199,9 +201,9 @@ public class ViewPagerHolder extends ViewPagerHolderBase<String> {
 		}
 ``` 
 
-2.无限循环:
+3.无限循环:
 
-```
+```java
         adapter.setInfinite(true);
 
         //使开始可以向左滑动，必须在加载数据之后调用
@@ -211,7 +213,7 @@ public class ViewPagerHolder extends ViewPagerHolderBase<String> {
 
 **动画（装饰者模式）**：
 1.ListView:
-```
+```java
         AnimationAdapter animationAdapter = new ScaleInAnimationAdapter(adapter);
 		animationAdapter.setAbsListView(listView);
 		
@@ -219,7 +221,7 @@ public class ViewPagerHolder extends ViewPagerHolderBase<String> {
 ```
 2.RecyclerView(支持到23.1.1)
 
-```
+```java
         AnimatorAdapter adapterWrapper = new SlideInBottomAnimatorAdapter(adapter, recyclerView);
 		recyclerView.setAdapter(adapterWrapper);
 ```
