@@ -17,6 +17,11 @@
 
 ### Usage ###
 
+Gradle:
+```
+compile 'net.robinx.lib:abslistviewadapter:1.0.0'
+```
+
 **AbsListView:**
 
 1.创建一个Holder:
