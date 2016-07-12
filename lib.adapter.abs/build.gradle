@@ -1,0 +1,48 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.3"
+
+    defaultConfig {
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+}
+
+//-----------------jCenter 配置 begin------------------------
+ext {
+    bintrayRepo = 'robinx'
+    bintrayName = 'AbsListViewAdapter'
+
+    publishedGroupId = 'net.robinx.lib'
+    libraryName = 'AbsListViewAdapter'
+    artifact = 'abslistviewadapter'
+
+    libraryDescription = 'CircleProgressBar is the dynamic display of a circle progress control.come on'
+
+    siteUrl = 'https://github.com/loonggg/CircleProgressBar'
+    gitUrl = 'https://github.com/loonggg/CircleProgressBar.git'
+
+    libraryVersion = '1.0.0'
+
+    developerId = 'loonggg'
+    developerName = 'gengguanglong'
+    developerEmail = 'gengguanglong@gmail.com'
+
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
+}

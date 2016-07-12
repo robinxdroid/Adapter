@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/lib.adapter.abs" />
+            <option value="$PROJECT_DIR$/lib.adapter.abs.anim" />
+            <option value="$PROJECT_DIR$/lib.adapter.recycler" />
+            <option value="$PROJECT_DIR$/lib.adapter.recycler.anim" />
+            <option value="$PROJECT_DIR$/lib.adapter.viewpager" />
+          </set>
+        </option>
+        <option name="myModules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/lib.adapter.abs" />
+            <option value="$PROJECT_DIR$/lib.adapter.abs.anim" />
+            <option value="$PROJECT_DIR$/lib.adapter.recycler" />
+            <option value="$PROJECT_DIR$/lib.adapter.recycler.anim" />
+            <option value="$PROJECT_DIR$/lib.adapter.viewpager" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

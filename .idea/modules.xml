@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Adapter.iml" filepath="$PROJECT_DIR$/Adapter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lib.adapter.abs/lib.adapter.abs.iml" filepath="$PROJECT_DIR$/lib.adapter.abs/lib.adapter.abs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lib.adapter.abs.anim/lib.adapter.abs.anim.iml" filepath="$PROJECT_DIR$/lib.adapter.abs.anim/lib.adapter.abs.anim.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lib.adapter.recycler/lib.adapter.recycler.iml" filepath="$PROJECT_DIR$/lib.adapter.recycler/lib.adapter.recycler.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lib.adapter.recycler.anim/lib.adapter.recycler.anim.iml" filepath="$PROJECT_DIR$/lib.adapter.recycler.anim/lib.adapter.recycler.anim.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lib.adapter.viewpager/lib.adapter.viewpager.iml" filepath="$PROJECT_DIR$/lib.adapter.viewpager/lib.adapter.viewpager.iml" />
+    </modules>
+  </component>
+</project>

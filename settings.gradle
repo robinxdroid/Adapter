@@ -1,0 +1,1 @@
+include ':app', ':lib.adapter.abs', ':lib.adapter.abs.anim', ':lib.adapter.recycler', ':lib.adapter.recycler.anim', ':lib.adapter.viewpager'
