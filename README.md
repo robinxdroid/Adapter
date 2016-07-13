@@ -127,7 +127,7 @@ public class RCVHolder extends RecyclerViewHolderBase<TestBean> {
 
         //追加数据
         for (int i = 0; i < 20; i++) {
-			adapter.append(i + "");
+			adapter.append(new TestBean());
 		}
 ```    
 
