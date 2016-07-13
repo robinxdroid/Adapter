@@ -120,11 +120,6 @@ public class RCVHolder extends RecyclerViewHolderBase<TestBean> {
 ```   
 2.代码中使用: 
 ```java
-        RecyclerView recyclerView=(RecyclerView) findViewById(R.id.rcv);
-        LinearLayoutManager layoutManager = new LinearLayoutManager(this);
-        layoutManager.setOrientation(OrientationHelper.VERTICAL);
-        recyclerView.setLayoutManager(layoutManager);
-        
         RecyclerListDataAdapter adapter=new RecyclerListDataAdapter<TestBean>();
         adapter.setViewHolderClass(RCVHolder.class, R.layout.item_rcv);  
      
