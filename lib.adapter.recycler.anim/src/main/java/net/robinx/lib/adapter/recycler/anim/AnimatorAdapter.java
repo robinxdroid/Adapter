@@ -81,6 +81,10 @@ public abstract class AnimatorAdapter<T extends RecyclerView.ViewHolder> extends
         return mViewAnimator;
     }
 
+    public RecyclerView.Adapter<T> getAdapter(){
+        return mAdapter;
+    }
+
     //-----------------------------------------------------------------------------
     // SaveInstanceState
     //-----------------------------------------------------------------------------
