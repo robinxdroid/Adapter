@@ -16,6 +16,15 @@
 
 
 ### Usage ###
+Gradle:
+```java
+    compile 'net.robinx:lib.adapter.abs:1.0.0'
+    compile 'net.robinx:lib.adapter.abs.anim:1.0.0'
+    compile 'net.robinx:lib.adapter.recycler:1.0.0'
+    compile 'net.robinx:lib.adapter.recycler.anim:1.0.0'
+    compile 'net.robinx:lib.adapter.viewpager:1.0.0'
+```
+根据自己需求选择依赖
 
 **AbsListView:**
 
